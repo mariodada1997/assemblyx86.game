@@ -1,0 +1,13 @@
+How to play?
+
+The Journey game is played on a variable-size grid of squares (aka spaces). The play grid is a 4x4 grid. The goal of the game is to take the player from the source point (a space) to the destination point (also a space) while avoiding any obstacles along the way. The Start and End points along with the obstacles are loaded as input to the game.
+
+The input is a linked list of records representing spaces with 3 fields:
+coordinates (row, col) each ranging [0, 3]
+a character indicating space type
+S (Start)
+E (End)
+# (Blocked)
+a link to the next record
+
+A move is specified by a single character which is a lowercase ‘i’, ‘j’, ‘k’, or ‘l’ (for up, left, down, and right, respectively). There may be multiple ways to get from Start to End, and in this game, we do not care how the player gets there.
